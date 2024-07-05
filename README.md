@@ -9,6 +9,11 @@ $ pip install reportlab
 
 ## Usage
 ```
+$ python pdfmerge.py [options]
+```
+
+### Options
+```
 usage: pdfmerge_4to1page.py [-h] -i INPUT
   [-o OUTPUT_FNAME] [-d OUTPUT_DIRNAME] [-t] [--without-line]
   [--without-pagenum] [--inside-margin INSIDE_MARGIN]
