@@ -246,8 +246,9 @@ else:
 #==============================================================#
 # Main
 #==============================================================#
+print( f' > Start marging PDF files' )
 for i in range( 0, _total_page_num, 4 ):
-    print( f' > {i}' )
+    print( f'   * page {i}' )
 
     page_num = i // 4 + 1
     is_odd = i % 8 == 0
@@ -327,4 +328,4 @@ for i in range( 0, _total_page_num, 4 ):
 
 with open( output_pdf, mode = 'wb' ) as f:
     writer.write( f )
-    print( f' > save as "{output_pdf}".' )
+    print( f' > Export to "{output_pdf}".' )
