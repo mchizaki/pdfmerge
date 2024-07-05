@@ -1,4 +1,4 @@
-# ckpdfmerge
+# pdfmerge
 
 ## Prerequisites
 `pypdf` and `reportlab` are required.
