@@ -33,15 +33,15 @@ parser.add_argument(
 )
 
 parser.add_argument(
-    '-t', f'--with-title', action = 'store_true',
+    '-t', '--with-title', action = 'store_true',
     help=f'flag with title page'
 )
 parser.add_argument(
-    f'--without-line', action = 'store_true',
+    '--without-line', action = 'store_true',
     help=f'flag without column line'
 )
 parser.add_argument(
-    f'--without-pagenum', action = 'store_true',
+    '--without-pagenum', action = 'store_true',
     help=f'flag without page number'
 )
 parser.add_argument(
@@ -181,7 +181,7 @@ def get_transformation_props(
 
 
 #==============================================================#
-# Procedure for drawing line & page number
+# Procedure for drawing line and inserting page number
 #==============================================================#
 from io import BytesIO
 from reportlab.pdfgen import canvas
