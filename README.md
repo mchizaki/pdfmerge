@@ -1,5 +1,12 @@
 # pdfmerge-4to1page
 
+## Prerequirements
+`pypdf` and `reportlab` are required.
+```
+$ pip install pypdf
+$ pip install reportlab
+```
+
 ## Usage
 ```
 usage: pdfmerge_4to1page.py [-h] -i INPUT
