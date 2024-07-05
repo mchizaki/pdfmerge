@@ -21,15 +21,15 @@ parser = argparse.ArgumentParser(
 
 parser.add_argument(
     '-i', '--input', type=str, required = True,
-    help = f'file path of input PDF'
+    help = f'path of input PDF file'
 )
 parser.add_argument(
     '-o', '--output-fname', default='result.pdf', type=str,
-    help = f'file name of output PDF [default: "result.pdf"]'
+    help = f'name of output PDF file [default: "result.pdf"]'
 )
 parser.add_argument(
     '-d', '--output-dirname', default='.', type=str,
-    help = f'directory name of output PDF [default: "./"]'
+    help = f'directory name of output PDF file [default: "./"]'
 )
 
 parser.add_argument(
@@ -71,11 +71,11 @@ args = parser.parse_args()
 #==============================================================#
 # i/o settings
 #==============================================================#
-input_pdf  = args.input
-output_pdf = os.path.join( args.output_dirname, args.output_fname )
+input_pdf_file  = args.input
+output_pdf_file = os.path.join( args.output_dirname, args.output_fname )
 os.makedirs( args.output_dirname, exist_ok = True )
 
-reader = PdfReader( input_pdf )
+reader = PdfReader( input_pdf_file )
 writer = PdfWriter()
 
 
@@ -326,6 +326,6 @@ for i in range( 0, _total_page_num, 4 ):
     # )
 
 
-with open( output_pdf, mode = 'wb' ) as f:
+with open( output_pdf_file, mode = 'wb' ) as f:
     writer.write( f )
-    print( f' > Export to "{output_pdf}".' )
+    print( f' > Export to "{output_pdf_file}".' )
