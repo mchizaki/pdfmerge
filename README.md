@@ -14,23 +14,21 @@ $ python pdfmerge_4to1.py [options]
 
 ### Options
 ```
-usage: pdfmerge_4to1.py [-h] -i INPUT
-  [-o OUTPUT_FNAME] [-d OUTPUT_DIRNAME] [-t] [--without-line]
-  [--without-pagenum] [--inside-margin INSIDE_MARGIN]
-  [--outside-margin OUTSIDE_MARGIN] [--column-spacing COLUMN_SPACING]
-  [--row-spacing ROW_SPACING]
-  [--margin-ratio-top-to-bottom MARGIN_RATIO_TOP_TO_BOTTOM]
+usage: pdfmerge_4to1.py [-h] -i INPUT [-o OUTPUT_FNAME] [-d OUTPUT_DIRNAME] [-t] [--without-line]
+                        [--without-pagenum] [--inside-margin INSIDE_MARGIN] [--outside-margin OUTSIDE_MARGIN]
+                        [--column-spacing COLUMN_SPACING] [--row-spacing ROW_SPACING]
+                        [--margin-ratio-top-to-bottom MARGIN_RATIO_TOP_TO_BOTTOM]
 
 convert 4 PDF pages to 1 PDF page.
 
 options:
   -h, --help            show this help message and exit
   -i INPUT, --input INPUT
-                        file path of input PDF
+                        path of input PDF file
   -o OUTPUT_FNAME, --output-fname OUTPUT_FNAME
-                        file name of output PDF [default: "result.pdf"]
+                        name of output PDF file [default: "result.pdf"]
   -d OUTPUT_DIRNAME, --output-dirname OUTPUT_DIRNAME
-                        directory name of output PDF [default: "./"]
+                        directory name of output PDF file [default: "./"]
   -t, --with-title      flag with title page
   --without-line        flag without column line
   --without-pagenum     flag without page number
